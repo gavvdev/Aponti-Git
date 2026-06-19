@@ -1,3 +1,4 @@
+# Conceitos Git
 É um sistema de versionamento, organiza os arquivos de um projeto e salva o histórico de alterações de tudo. O git pode tanto ser operado com interface grafica em IDE's quanto via [[Terminal]] 
 # Arquivos Especiais de Configuração
 1. [[.gitignore]]
