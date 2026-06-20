@@ -1,5 +1,6 @@
 # Conceitos Git
 É um sistema de versionamento, organiza os arquivos de um projeto e salva o histórico de alterações de tudo. O git pode tanto ser operado com interface grafica em IDE's quanto via [[Terminal]] 
+
 # Arquivos Especiais de Configuração
 1. [[.gitignore]]
 É um arquivo de texto onde você lista explicitamente todos os arquivos, formatos ou pastas que o Git **deve ignorar**. Tudo o que estiver documentando aqui não será rastreado pelo Git e não irá para o repositório
@@ -136,7 +137,7 @@ Para visualizar os hashs:
 `git reflog`
 
 e para aplicar:
-`git merge {hash}`
+`git merge <hash>`
 
 #### Removendo Arquivos
 Apagar arquivos no fluxo do Git exige um pouquinho de atenção. Para sumir com um arquivo do seu repositório, você precisa tirá-lo da área de seleção (_stage_) e commitar a mudança. O comando `git rm` facilita isso, deletando o arquivo do Git e do seu diretório local ao mesmo tempo.
