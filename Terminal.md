@@ -44,3 +44,7 @@ Ex: `cd "C:\Program Files\Meu App"`
 	- Ex (renomeando arquivo): `mv -i foto_antiga.jpg foto_nova.jpg`
 - `nano` - Abre o editor de texto do terminal linux, pode ser usado para ver e editar o conteúdo de um arquivo. (Se não houver arquivo com o nome, um novo arquivo pode ser salvo com esse nome após fechar o editor)
 	Ex: `nano lista.txt`
+- `touch` - Cria um arquivo vazio.
+	- Ex: `touch novo_arquivo.txt`
+- `cp` - Copia arquivos e diretórios.
+	- Ex: `cp arquivo.txt copia.txt`
