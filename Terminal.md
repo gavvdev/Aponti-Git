@@ -1,3 +1,4 @@
+# Terminal
 Interface de Linha de Comando (CLI) que permite que você interaja diretamente com o sistema operacional do seu computador através de comandos.
 ## Atalhos
 ⚠️**Atenção (caminhos com espaços)** - Envolva caminhos que contenham espaços entre aspas
