@@ -1,11 +1,14 @@
-# Conceito Git
-É um sistema de versionamento, organiza os arquivos de um projeto e salva o histórico de alterações de tudo. O git pode tanto ser operado com interface grafica em IDE's quanto via [[Terminal]] 
+# Conceitos sobre Git
+É um sistema de versionamento, organiza os arquivos de um projeto e salva o histórico de alterações de tudo. O git pode tanto ser operado com interface grafica em IDE's quanto via Terminal.
+
 # Arquivos Especiais de Configuração
-1. [[.gitignore]]
+1. `.gitignore`
 É um arquivo de texto onde você lista explicitamente todos os arquivos, formatos ou pastas que o Git **deve ignorar**. Tudo o que estiver documentando aqui não será rastreado pelo Git e não irá para o repositório
+	
 	**Para que serve:** Evitar o envio de arquivos gerados automaticamente (como as pastas e arquivo`.env, node_modules, dist` e `build`) e arquivos do própio sistema operacional (como`.DS_Store` no Mac)
-2. [[.env]]
+2. `.env`
 É o arquivo utilizado para armazenar as **variáveis de ambiente** do seu projeto.
+	
 	**Para que serve:** Ele guarda dados sensíveis e configurações específicas da sua máquina local, como senhas de bancos de dados, chaves de APIs privadas e portas de servidores.
 		**Atenção**: O arquivo `.env` **NUNCA deve ser enviado para o Git**. Por conter dados secretos, o nome `.env` deve ser obrigatoriamente adicionado dentro do seu arquivo `.gitignore`.
 
@@ -26,10 +29,11 @@ Se você precisar de ajuda ao usar o Git, existem três maneiras de obter a ajud
 - `git help <comando>`
 - `git <comando> --help`
 - `man git <comando>`
-	Extra: O comando principal para listar a lista de comandos disponíveis no Git é: `git help -a`
+
+Extra: O comando principal para listar a lista de comandos disponíveis no Git é: `git help -a`
 
 # Verificação
-Depois de instalar e configurar o Git, É importante garantir que o terminal do seu sistema operacional consegue reconhece-lo. Para isso, basta abrir o seu [[Terminal]](Prompt de Comando, Powershell ou Git Bash) e digitar um dos comandos abaixo:
+Depois de instalar e configurar o Git, É importante garantir que o terminal do seu sistema operacional consegue reconhecê-lo. Para isso, basta abrir o seu Terminal(Prompt de Comando, Powershell ou Git Bash) e digitar um dos comandos abaixo:
 
 `git --version`
 
@@ -38,24 +42,27 @@ Se tudo estiver correto, o terminal retornará o texto indicando a Versão do Gi
 `git version 2.54.0.windows.1`
 
 Se o terminal retornar uma mensagem de erro como "*commando not found*" ou "*Não é reconhecido como um comando interno*", significa que o Git não foi instalado corretamente ou que o caminho dele não foi adicionado as variáveis de ambiente do seu sistema.
+
 # Comandos Git
 São ferramentas de linha de comando essenciais para o controle de versão distribuído, permitindo gerenciar alterações no código-fonte, colaborar com equipes e manter um histórico detalhado do projeto.
 
 Nesta página, será explicado cada comando passo a passo para determinados contextos.
 
 # Criando o Projeto
-Você pode obter um projeto Git fazendo uso de um projeto ou diretório existente e o importando para o Git ou clonando um repositório Git existente a partir de outro servidor ([[Trabalho Aponti/Github|Github]]).
+Você pode obter um projeto Git fazendo uso de um projeto ou diretório existente e o importando para o Git ou clonando um repositório Git existente a partir de outro servidor (Github).
 
 #### Inicializando Repositório em um Diretório Existente
-Caso você esteja iniciando o monitoramento de um projeto existente com Git, você precisa ir para o diretório do projeto e digitar
+Caso você esteja iniciando o monitoramento de um projeto existente com Git, você precisa ir para o diretório do projeto e digitar.
 
 `git init`
-	Isso cria um novo subdiretório chamado `.git` que contem todos os arquivos necessários de seu repositório, um esqueleto de repositório Git.
+Isso cria um novo subdiretório chamado `.git` que contem todos os arquivos necessários de seu repositório, um esqueleto de repositório Git.
 
-Caso você queira começar a controlar o versionamento dos arquivos existentes, você provavelmente deve começar a monitorar esses arquivos e fazer um commit inicial. você pode realizar isso com poucos comandos.
+Caso você queira começar a controlar o versionamento dos arquivos existentes, você provavelmente deve começar a monitorar esses arquivos e fazer um commit inicial. Você pode realizar isso com poucos comandos.
 
 `touch .gitignore`
+<br>
 `git add .gitignore`
+<br>
 `git commit -m "Mensagem"`
 
 Agora, você possui um repositório Git com arquivos monitorados e um commit inicial.
@@ -64,16 +71,16 @@ Agora, você possui um repositório Git com arquivos monitorados e um commit ini
 Você pode clonar um repositório com `git clone <URL>`. Por exemplo, caso você queira clonar o repositório do curso de Git e Github do Gustavo Guanabara, você pode executar da seguinte forma:
 
 `git clone https://github.com/gustavoguanabara/git-github.git`
-	Quando um repositório é inicialmente clonado, todos os seus arquivos estarão monitorados e inalterados porque você simplesmente os obteve e ainda não os editou.
+Quando um repositório é inicialmente clonado, todos os seus arquivos estarão monitorados e inalterados porque você simplesmente os obteve e ainda não os editou.
 
 #### Registrando Alterações
-Conforme você edita os arquivos do seu clone local de um repositório, o Git passa a vê-los como modificados, porque você os alterou desde seu ultimo commit. Voce seleciona esses arquivos modificados e então faz o commit de todas as alterações selecionadas e ao longo do projeto esse ciclo passa a se repetir.
+Conforme você edita os arquivos do seu clone local de um repositório, o Git passa a vê-los como modificados, porque você os alterou desde seu ultimo commit. Você seleciona esses arquivos modificados e então faz o commit de todas as alterações selecionadas e ao longo do projeto esse ciclo passa a se repetir.
 
 Para passar a monitorar um novo arquivo, use o comando `git add`. Para monitorar o arquivo README, você pode rodar isso:
 
 `git add README` 
-	Caso queira adicionar todas as modificações feitas no projeto use o comando:
-	`git add .`
+Caso queira adicionar todas as modificações feitas no projeto use o comando:
+`git add .`
 
 Se você rodar o comando `git status`, você verá quer o seu arquivo `README` agora está sendo monitorado. Os arquivos monitorados faram parte do commit.
 
@@ -81,15 +88,21 @@ Se você rodar o comando `git status`, você verá quer o seu arquivo `README` a
 A principal ferramenta utilizada para determinar quais arquivos estão em quais estados é o comando:
 
 `git status`
-	O comando mostra em qual branch você se encontra. Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo README. 
+
+O comando mostra em qual branch você se encontra. Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo README. 
 
 Caso o arquivo não existe e você execute `git status`, você verá o arquivo não monitorado dessa forma:
 
-``#On branch master
+`#On branch master`
+<br>
 `#Untracked files:`
+<br>
 `# (use "gid add {files}..." to include in what will be commited)`
+<br>
 `#`
+<br>
 `#README`
+<br>
 `nothing added to commit but untracked files presente (use"git add" to track)`
 
 Pode ver que o seu novo arquivo `README` não está sendo monitorado, pois está listado sob o cabeçalho "**Untracked files**" na saída do comando status. Não monitorado significa basicamente que o Git está vendo um arquivo que não existia na ultima captura (commit).
@@ -100,7 +113,7 @@ O Git não vai inclui-lo nas suas capturas de commit até que você o diga expli
 Se o comando `git status` for muito vago, você quer saber exatamente o que você alterou, não apenas quais arquivos foram alterados. Você pode utilizar o comando:
 
 `git diff`
-	Apesar do comando `git status` responder essas duas perguntas de maneira geral, o `git diff` mostra as linhas exatas que foram adicionadas e removidas, o patch, por assim dizer.
+Apesar do comando `git status` responder essas duas perguntas de maneira geral, o `git diff` mostra as linhas exatas que foram adicionadas e removidas, o patch, por assim dizer.
 
 Se você quer ver o que selecionou que irá no seu próximo commit, pode utilizar:
 `git diff --cached`
@@ -120,7 +133,8 @@ Refazer commit quando esquecer de adicionar um arquivo no Stage (Diretório de T
 O **amend** é destrutivo e só deve ser utilizado antes do commit ter sido enviado ao servidor remoto.
 
 #### Como Reverter Alterações
-Em qualquer fase do projeto, você pode querer desfazer alguma coisa. Veremos algumas ferramentas básicas para desfazer modificações que você fez. **Cuidado**, porque você pode desfazer algumas dessas mudanças. Esta é uma das raras situações no Git onde um deslize pode causar a perda definitiva de código.
+Em qualquer fase do projeto, você pode querer desfazer alguma coisa. Veremos algumas ferramentas básicas para desfazer modificações que você fez. 
+**Cuidado**, porque você pode desfazer algumas dessas mudanças. Esta é uma das raras situações no Git onde um deslize pode causar a perda definitiva de código.
 
 Para apagar o último histórico e resetar tudo:
 `git reset --hard HEAD~1`
@@ -142,64 +156,77 @@ e para aplicar:
 Apagar arquivos no fluxo do Git exige um pouquinho de atenção. Para sumir com um arquivo do seu repositório, você precisa tirá-lo da área de seleção (_stage_) e commitar a mudança. O comando `git rm` facilita isso, deletando o arquivo do Git e do seu diretório local ao mesmo tempo.
 
 Força a exclusão do arquivo no Git e no seu computador:
-`git rm -f <arquivo>
-	Desfaz o monitoramento do arquivo, ou seja, o Git deixa de segui-lo, mas o arquivo físico continua intacto na sua máquina.
-	`git rm --cached + <arquivo>`
-		Comando terminal direto (fora do Git) para apagar uma pasta inteira instantaneamente.
-		`rm -rf <arquivo>`
+`git rm -f <arquivo>`
+Desfaz o monitoramento do arquivo, ou seja, o Git deixa de segui-lo, mas o arquivo físico continua intacto na sua máquina.
+
+`git rm --cached + <arquivo>`
+Comando terminal direto (fora do Git) para apagar uma pasta inteira instantaneamente.
+<br>
+`rm -rf <arquivo>`
 
 **Nota de Segurança:** Se você alterou um arquivo e já o adicionou ao _stage_, o Git vai bloquear a remoção comum para proteger seu trabalho. Para prosseguir mesmo assim, você deve forçar a barra usando o argumento `-f`. Como esses dados ainda não estão em um _snapshot_ (commit), eles não poderão ser recuperados depois.
+
 #### Movendo Arquivos
 Diferente de muitos sistemas VCS, o Git não monitora explicitamente arquivos movidos.
 É um pouco confuso que o Git tenha um comando `mv`. 
 
 Se você quiser renomear um arquivo no Git, voce pode fazer isso com:
 `git mv arquivo_origem arquivo_destino`
-	E funciona. De fato, se você fizer algo desse tipo e consultar o status, você verá que o Git considera que o arquivo foi renomeado.
+	
+E funciona. De fato, se você fizer algo desse tipo e consultar o status, você verá que o Git considera que o arquivo foi renomeado.
 
 No entanto, isso é equivalente a rodar algo como:
 
 `mv README.txt README`
+<br>
 `git rm README.txt`
+<br>
 `git add README`
 
 O Git descobre que o arquivo foi renomeado implicitamente, então ele não se importa se você renomeou por este caminho ou com o comando `mv`. A única diferença real é que o comando `mv` é mais conveniente, executa três passos de uma vez. O mais importante, você pode usar qualquer ferramenta para renomear um arquivo, e usar add/rm depois, antes de consolidar com o commit.
 
 #### Fazendo Stash
-Muitas vezes, quando você está trabalhando em uma parte do seu projeto, as  coisas estão em um estado confuso e você quer mudar de branch por um tempo para trabalhar em outra coisa. O problema é, você não quer fazer o commit de um trabalho incompleto somente para voltar a ele mais tarde. A resposta para esse problema é o comando `git stash`.
+Muitas vezes, quando você está trabalhando em uma parte do seu projeto, as coisas estão em um estado confuso e você quer mudar de branch por um tempo para trabalhar em outra coisa. O problema é, você não quer fazer o commit de um trabalho incompleto somente para voltar a ele mais tarde. A resposta para esse problema é o comando `git stash`.
 
 Você quer mudar de branch, mas não quer fazer o commit do que você ainda está trabalhando; você irá fazer o stash das modificações. Para fazer um novo stash na sua pilha, execute:
 
 `git stash`
-	Seu diretório de trabalho estará limpo.
-	Neste momento, voce pode facilmente mudar de branch e trabalhar em outra coisa; suas alterações estão armazenadas na sua pilha.
+	
+Seu diretório de trabalho estará limpo.
+Neste momento, você pode facilmente mudar de branch e trabalhar em outra coisa; suas alterações estão armazenadas na sua pilha.
 
 Para ver stashes que você guardou, você pode usar:
 `git stash list`
-	Você pode aplicar aquele que acabou de fazer o stash com o comando mostrado na saída de ajuda do comando stash original : `git stash apply`. Se voce quer aplicar um dos stashes mais antigos, você pode especifica-lo, assim:  `git stash apply stash@{2}`. Se você não especificar um stash, Git assume que é o stash mais recente e tenta aplicá-lo.
+
+Você pode aplicar aquele que acabou de fazer o stash com o comando mostrado na saída de ajuda do comando stash original : `git stash apply`. Se você quer aplicar um dos stashes mais antigos, você pode especifica-lo, assim:  `git stash apply stash@{2}`. 
+Se você não especificar um stash, Git assume que é o stash mais recente e tenta aplicá-lo.
 
 #### Tag
-Gite tem a habilidade de criar tags em pontos específicos na história do código como pontos importantes. Geralmente as pessoas usam esta funcionalidade para marcar pontos de release (v1.0, e por ai vai). Nesta seção, mostraremos como listar as tags disponíveis, como criar novas tags, e quais são os tipos diferentes de tags.
+O Git tem a habilidade de criar tags em pontos específicos na história do código como pontos importantes. Geralmente as pessoas usam esta funcionalidade para marcar pontos de release (v1.0, e por ai vai). Nesta seção, mostraremos como listar as tags disponíveis, como criar novas tags, e quais são os tipos diferentes de tags.
 
 Para listar as `tags` execute:
 `git tag`
-	Para criar uma`tag` basta executar o seguinte comando, caso não queira criar a `tag anotada`, somente retire os parâmetro `-a` e `-m`.
-	`git tag -a v1.4 -m 'my version 1.4'`.
+Para criar uma`tag` basta executar o seguinte comando, caso não queira criar a `tag anotada`, somente retire os parâmetro `-a` e `-m`.
+`git tag -a v1.4 -m 'my version 1.4'`.
 
 # Compartilhar e Atualizar Projetos
+
 #### Fazendo o Fetch
 Para pegar dados dos seus projetos remotos, você pode executar:
 `git fetch origin`
-	Esse comando vai até o projeto remoto e pega todos os dados que você ainda não tem. Depois de fazer isso, você deve ter referencias para todos os branches desse remoto, onde você pode fazer o merge ou inspecionar a qualquer momento.
+
+Esse comando vai até o projeto remoto e pega todos os dados que você ainda não tem. Depois de fazer isso, você deve ter referencias para todos os branches desse remoto, onde você pode fazer o merge ou inspecionar a qualquer momento.
+
 #### Atualizando local
 Incorpora as alterações de um repositório remoto no branch atual. Em seu modo padrão, `git pull` é uma abreviação para `git fetch` seguindo de git merge `FETCH_HEAD`. Por exemplo, se eu estiver em uma branch chamada `develop` e quiser atualizar caso haja atualizações remotamente:
 
 `git pull origin develop`
 
 #### Empurrando seus commits
-`git push` é o comando em que você transfere commits a partir do seu repositório local para um repositório remoto. É a contrapartida do `git fetch`, que busca importações e comprometem as agencias locais, utilizando o `git push` as exportações comprometem as filiais remotas.
+`git push` 
+é o comando em que você transfere commits a partir do seu repositório local para um repositório remoto. É a contrapartida do `git fetch`, que busca importações e comprometem as agencias locais, utilizando o `git push` as exportações comprometem as filiais remotas.
 
-Para fazer isso, voce executa o `git push <nome_do_repositorio><nome_da_sua_branch-_local>`, que vai tentar fazer que `<nome_do_repositorio_remoto>` receba a sua branch `<nome_da_sua_branch_local>` contendo todos seus commits com alterações. 
+Para fazer isso, você executa o `git push <nome_do_repositorio><nome_da_sua_branch-_local>`, que vai tentar fazer que `<nome_do_repositorio_remoto>` receba a sua branch `<nome_da_sua_branch_local>` contendo todos seus commits com alterações. 
 
 Por exemplo:
 `git push origin develop`
@@ -210,7 +237,7 @@ Para ver quais servidores remotos você configurou, execute o comando `git remot
 Para ver as URLs que o Git armazenou para leitura e escrita, adiciona `-v`:
 `git remote -v`
 
-Para adicionar um novo repositório remoto com um nome abreviado que voce pode referencias facilmente:
+Para adicionar um novo repositório remoto com um nome abreviado que você pode referências facilmente:
 `git remo add <apelido> <URL>`
 
 Para remover uma referencia de repositório remoto:
@@ -225,7 +252,7 @@ Os submódulos permitem que você inclua um repositório Git como um subdiretór
 Para adicionar um submódulo ao seu projeto:
 `git submodule add <URL> <caminho>`
 
-Ao clonar um repositório que contém submódulos, voce precisa inicializá-los e atualizá-los:
+Ao clonar um repositório que contém submódulos, você precisa inicializá-los e atualizá-los:
 `git submodule init`
 `git submodule update`
 
@@ -236,7 +263,7 @@ Para atualizar todos os submódulos para as ultimas versões remotas:
 `git submodule update --remote`
 
 # Exibindo Objetos
-O comando `git show` exibe informações osbre objetos do Git (commits, tags, árvores, blobs). 
+O comando `git show` exibe informações sobre objetos do Git (commits, tags, árvores, blobs). 
 
 Para ver os detalhes de um commit específico, incluindo o diff das alterações:
 `git show <hash_do_commit>`
@@ -290,7 +317,8 @@ Para comparar o stage (área de seleção) com o último commit:
 `git diff --staged`
 
 # Solicitando Pull
-Antes de existirem as interfaces visuais de plataformas como GitHub ou GitLab, os desenvolvedores já solicitavam a inclusão de seus códigos usando o próprio terminal. O `git request-pull` serve justamente para isso: ele gera uma mensagem pronta que avisa ao dono de um projeto que você tem melhorias para enviar.
+Antes de existirem as interfaces visuais de plataformas como GitHub ou GitLab, os desenvolvedores já solicitavam a inclusão de seus códigos usando o próprio terminal. 
+O `git request-pull` serve justamente para isso: ele gera uma mensagem pronta que avisa ao dono de um projeto que você tem melhorias para enviar.
 
 `git request-pull <commit_inicial> <url_do_repositorio> <branch>`
 
