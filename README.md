@@ -51,9 +51,29 @@ Ex: `cd "C:\Program Files\Meu App"`
 	- Ex: `touch novo_arquivo.txt`
 - `cp` - Copia arquivos e diretórios.
 	- Ex: `cp arquivo.txt copia.txt`
+	
+# O que é Controle de Versão?
+O controle de versão, também conhecido como versionamento, é uma prática importante no desenvolvimento de software para rastrear e gerenciar as mudanças feitas no código e em outros arquivos. 
 
-# O que é controle de versão
+Ele registra todas as alterações feitas no código-fonte, permitindo consultar o histórico, comparar mudanças e restaurar versões anteriores quando necessário. Funciona como uma **“fonte única de verdade”** e uma rede de segurança, possibilitando que equipes experimentem e desenvolvam sem risco de perdas irreversíveis.
 
+Quando há alterações simultâneas ou conflitos, o sistema ajuda a identificar problemas, rastrear quem fez cada modificação e reverter rapidamente o código para um estado estável. Também facilita revisões de código e a análise da evolução do projeto ao longo do tempo.
+
+O versionamento funciona como uma rede de segurança para proteger o código-fonte de danos irreparáveis, proporcionando a equipe de desenvolvimento a liberdade de experimentar sem medo de causar danos ou criar conflitos de código.
+
+### Como funciona um controle de versão?
+Basicamente, os arquivos do projeto ficam armazenados em um repositório (local ou remoto) e o histórico de suas versões é salvo nele. Os desenvolvedores podem acessar e resgatar a versão mais recente e fazer uma cópia local, na qual poderão trabalhar em cima dela e continuar o processo de desenvolvimento.
+
+ A cada alteração feita, é possível enviar novamente ao repositório, atualizando a versão a partir de outras feitas pelos demais colaboradores.
+
+Dependendo das necessidades específicas de uma equipe e do processo de desenvolvimento, um VCS (sistema de controle de versão) pode ser **local**, **centralizado** ou **distribuído**. O VCS local armazena os arquivos em um sistema local, o VCS centralizado armazena as alterações em um servidor único e o VCS distribuído permite que cada desenvolvedor tenha uma cópia completa do repositório, como no **Git**.
+
+### Por que usar o controle de versão? Como simplifica a colaboração?
+À medida que as empresas aceleram a entrega de software com DevOps, fica cada vez mais díficil controlar e gerenciar as diferentes versões dos artefatos da aplicação, desde o código e a configuração até o design e a implantação.
+
+O controle de versão coordena todas as mudanças em um projeto de software, rastreando efetivamente as alterações nos arquivos-fonte, designs e outros ativos digitais necessários para um projeto, além dos metadados relacionados. Sem ele, os projetos podem facilmente se tornar uma confusão de diferentes versões dos arquivos, prejudicando a capacidade da equipe de desenvolvimento de software de entregar resultados.
+
+Com um VCS robusto, as equipes de software podem reunir rapidamente todos os arquivos críticos do projeto e promover uma comunicação eficaz para melhorar a qualidade de código. E, como ele oferece uma fonte única de verdade, os stakeholders de toda a equipe DevOps podem colaborar para criar soluções inovadoras: desde os responsáveis pelo planejamento até os profissionais responsáveis pela implementação e manutenção do sistema.
 # O que é Git
 
 # Comandos Git
