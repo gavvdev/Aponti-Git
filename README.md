@@ -1,5 +1,4 @@
-# Aponti-Git
-Contexto sobre Git
+# Guia de comandos Git
 
 # Foco no ambiente de terminal
 Interface de Linha de Comando (CLI) que permite que você interaja diretamente com o sistema operacional do seu computador através de comandos.
@@ -12,6 +11,7 @@ Ex: `cd "C:\Program Files\Meu App"`
 **Tab para auto-complete** - Pode-se usar o atalho Tab para completar automaticamente o nome de alguma pasta ou algum comando
 
 **Ctrl+L**  - Limpa o terminal
+
 ## Comandos (CMD)
 - `dir` - Listar tudo que está no seu diretório (pasta) atual, dependendo do terminal ele pode mostrar o tipo de arquivo com alguma cor diferente. O parâmetro `/ah` exibe arquivos e diretórios ocultos
 	- Ex: `dir`
@@ -51,3 +51,9 @@ Ex: `cd "C:\Program Files\Meu App"`
 	- Ex: `touch novo_arquivo.txt`
 - `cp` - Copia arquivos e diretórios.
 	- Ex: `cp arquivo.txt copia.txt`
+
+# O que é controle de versão
+
+# O que é Git
+
+# Comandos Git
