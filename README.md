@@ -76,4 +76,88 @@ O controle de versão coordena todas as mudanças em um projeto de software, ras
 Com um VCS robusto, as equipes de software podem reunir rapidamente todos os arquivos críticos do projeto e promover uma comunicação eficaz para melhorar a qualidade de código. E, como ele oferece uma fonte única de verdade, os stakeholders de toda a equipe DevOps podem colaborar para criar soluções inovadoras: desde os responsáveis pelo planejamento até os profissionais responsáveis pela implementação e manutenção do sistema.
 # O que é Git
 
-# Comandos Git
+# Comandos Git 
+
+Os comandos Git são utilizados para controlar as versões de projetos, registrar alterações e facilitar o trabalho em equipe. A seguir estão os principais comandos utilizados no dia a dia de um desenvolvedor. 
+`git config` - Configura informações do usuário que serão associadas aos commits.
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@email.com"
+git config --local user.name "Seu Nome"
+git config --local user.email "seuemail@email.com"
+```
+`git init` - Inicializa um novo repositório Git na pasta atual. 
+```bash
+git init
+```
+`git clone` - Cria uma cópia local de um repositório remoto. 
+
+```bash
+git clone https://github.com/usuario/repositorio.git
+```
+`git status` - Exibe o estado atual do repositório, mostrando arquivos modificados, adicionados e não rastreados. 
+```bash
+git status
+```
+`git add` - Adiciona arquivos para a área de preparação (staging area).
+```bash
+git add arquivo.txt (Adicionar um arquivo)
+git add . (Adicionar todos os arquivos alterados)
+```
+`git commit` - Registra as alterações adicionadas ao histórico do projeto. 
+```bash
+git commit -m "Adiciona tela de login"
+```
+`git log` - Mostra o histórico de commits do repositório. 
+```bash
+git log
+git log --oneline (Versão resumida)
+```
+`git diff` - Mostra as diferenças entre versões de arquivos. 
+
+```bash
+git diff
+```
+`git branch` - Lista, cria ou remove branches.
+```bash
+git branch (Listar branches)
+git branch nova-feature (Criar uma branch)
+git branch -d nova-feature (Deleta uma branch)
+```
+`git checkout` - Permite trocar de branch. 
+```bash
+git checkout nova-feature
+git checkout -b nova-feature (Cria e muda para a branch criada)
+```
+`git switch` - Alternativa moderna para trocar de branch. 
+```bash
+git switch nova-feature
+```
+`git merge` - Mescla alterações de uma branch com outra. 
+```bash
+git merge nova-feature
+```
+`git remote add origin` - Conecta o repositório local a um repositório remoto. 
+```bash
+git remote add origin https://github.com/usuario/repositorio.git
+```
+`git push` - Envia commits locais para o repositório remoto. 
+```bash
+git push origin main
+```
+`git pull` - Baixa e integra alterações do repositório remoto. 
+```bash
+git pull origin main
+```
+`git fetch` - Baixa alterações do repositório remoto sem aplicá-las automaticamente. 
+```bash
+git fetch
+```
+`git reset` - Remove arquivos da área de preparação ou retorna o projeto para um estado anterior. 
+```bash
+git reset HEAD arquivo.txt
+```
+`git restore` - Descarta alterações realizadas em arquivos. 
+```bash
+git restore arquivo.txt
+```
