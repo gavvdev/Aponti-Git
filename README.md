@@ -183,6 +183,7 @@ git log --oneline
 Exemplo de saída: 
 
 a1b2c3d Adiciona tela de login 
+
 e4f5g6h Corrige erro no cadastro
 
 2. Reverter o commit problemático
@@ -222,6 +223,7 @@ git log --online
 Exemplo:
 
 a1b2c3d Corrige erro no login 
+
 e4f5g6h Adiciona tela de cadastro
 
 2. Trocar para a branch que receberá a correção
