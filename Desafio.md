@@ -14,4 +14,13 @@ o comando `git revert` cria um novo commit que desfaz as alterações de um comm
 
 ```bash
 git log --oneline
-```
+``` 
+
+Exemplo de saída: 
+
+a1b2c3d Adiciona tela de login 
+e4f5g6h Corrige erro no cadastro
+
+2. Reverter o commit problemático
+```bash 
+git revert: a1b2c3d

@@ -161,3 +161,30 @@ git reset HEAD arquivo.txt
 ```bash
 git restore arquivo.txt
 ```
+
+## Desafio: Desfazer um commit sem apagar o histórico
+
+## Cenário
+
+Pedro realizou um commit e enviou para o GitHub. Após alguns testes, percebeu que a alteração causou erros no sistema. Como outros membros da equipe já baixaram esse commit, ele não quer apagar o histórico do repositório.
+
+## Solução: git revert
+
+o comando `git revert` cria um novo commit que desfaz as alterações de um commit anterior, mantendo o histórico do projeto intacto.
+
+## Passo a passo
+
+1. Verificar o histórico de commits
+
+```bash
+git log --oneline
+``` 
+
+Exemplo de saída: 
+
+a1b2c3d Adiciona tela de login 
+e4f5g6h Corrige erro no cadastro
+
+2. Reverter o commit problemático
+```bash 
+git revert: a1b2c3d
