@@ -51,7 +51,10 @@ Ex: `cd "C:\Program Files\Meu App"`
 	- Ex: `touch novo_arquivo.txt`
 - `cp` - Copia arquivos e diretórios.
 	- Ex: `cp arquivo.txt copia.txt`
-	
+ 
+ <hr>
+<br>
+ 
 # O que é Controle de Versão?
 O controle de versão, também conhecido como versionamento, é uma prática importante no desenvolvimento de software para rastrear e gerenciar as mudanças feitas no código e em outros arquivos. 
 
@@ -74,8 +77,17 @@ Dependendo das necessidades específicas de uma equipe e do processo de desenvol
 O controle de versão coordena todas as mudanças em um projeto de software, rastreando efetivamente as alterações nos arquivos-fonte, designs e outros ativos digitais necessários para um projeto, além dos metadados relacionados. Sem ele, os projetos podem facilmente se tornar uma confusão de diferentes versões dos arquivos, prejudicando a capacidade da equipe de desenvolvimento de software de entregar resultados.
 
 Com um VCS robusto, as equipes de software podem reunir rapidamente todos os arquivos críticos do projeto e promover uma comunicação eficaz para melhorar a qualidade de código. E, como ele oferece uma fonte única de verdade, os stakeholders de toda a equipe DevOps podem colaborar para criar soluções inovadoras: desde os responsáveis pelo planejamento até os profissionais responsáveis pela implementação e manutenção do sistema.
+
+
+ <hr>
+<br>
+ 
 # O que é Git
 
+
+ <hr>
+<br>
+ 
 # Comandos Git 
 
 Os comandos Git são utilizados para controlar as versões de projetos, registrar alterações e facilitar o trabalho em equipe. A seguir estão os principais comandos utilizados no dia a dia de um desenvolvedor. 
@@ -161,6 +173,10 @@ git reset HEAD arquivo.txt
 ```bash
 git restore arquivo.txt
 ```
+
+ <hr>
+<br>
+ 
 
 ## Desafio: Desfazer um commit sem apagar o histórico
 
