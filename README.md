@@ -268,3 +268,25 @@ git push origin main
 ## Resultado
 
 Utilizando `git cherry-pick`, Pedro consegue reaproveitar uma correção importante sem precisar mesclar toda a branch `nova-feature`, evitando alterações desnecessárias na `main`.
+ <hr>
+
+## Colaboradores
+<a href="https://github.com/gavvdev" title="gavvdev">
+  <img src="https://github.com/gavvdev.png?size=100" width="72" alt="gavvdev" />
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/LucasEmmanoel06" title="LucasEmmanoel06">
+  <img src="https://github.com/LucasEmmanoel06.png?size=100" width="72" alt="LucasEmmanoel06" />
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/Mariana-ASM" title="Mariana-ASM">
+  <img src="https://github.com/Mariana-ASM.png?size=100" width="72" alt="Mariana-ASM" />
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/PedroDelmiro13" title="PedroDelmiro13">
+  <img src="https://github.com/PedroDelmiro13.png?size=100" width="72" alt="PedroDelmiro13" />
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/VitorJunior60" title="VitorJunior60">
+  <img src="https://github.com/VitorJunior60.png?size=100" width="72" alt="VitorJunior60" />
+</a>
