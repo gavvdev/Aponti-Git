@@ -54,7 +54,16 @@ Ex: `cd "C:\Program Files\Meu App"`
  
  <hr>
 <br>
- 
+
+# História do Controle de Versão
+O controle de versão surgiu da necessidade de organizar e preservar o histórico de modificações em arquivos, principalmente no processo de desenvolvimento de software. Antes do surgimento dos sistemas modernos, era comum os desenvolvedores realizarem o versionamento de forma manual, criando cópias de arquivos com denominações como `projeto_v1`, `projeto_v2` ou `projeto_final`, o que dificultava o controle das mudanças e a colaboração entre equipes.
+
+Os primeiros Sistemas de Controle de Versão (VCS) surgiram na década de 1970. O **SCCS (Source Code Control System)**, desenvolvido pela Bell Labs em 1972, foi um dos primeiros sistemas de controle de versão. Em 1982, apenas alguns anos depois, foi lançado o **RCS (Revision Control System)**, que facilitou o controle de versões de arquivos individuais.
+
+Com o avanço do desenvolvimento colaborativo, apareceram os sistemas centralizados, como **CVS (Concurrent Versions System)** e, mais tarde, o **Subversion (SVN)**. Em tais sistemas, um servidor central armazenava todo o histórico do projeto, possibilitando que diversos desenvolvedores trabalhassem simultaneamente.
+
+Em 2005, **Linus Torvalds**, criador do Linux, desenvolveu o **Git** para atender às necessidades de desenvolvimento do kernel Linux. Ao contrário dos sistemas centralizados, o Git utiliza um modelo distribuído, em que cada desenvolvedor possui uma cópia completa do repositório e de todo o histórico de versões. Essa metodologia acelerou o desenvolvimento, tornando-o mais seguro e eficiente, o que fez do Git o sistema de controle de versão mais utilizado atualmente.
+
 # O que é Controle de Versão?
 O controle de versão, também conhecido como versionamento, é uma prática importante no desenvolvimento de software para rastrear e gerenciar as mudanças feitas no código e em outros arquivos. 
 
@@ -67,7 +76,7 @@ O versionamento funciona como uma rede de segurança para proteger o código-fon
 ### Como funciona um controle de versão?
 Basicamente, os arquivos do projeto ficam armazenados em um repositório (local ou remoto) e o histórico de suas versões é salvo nele. Os desenvolvedores podem acessar e resgatar a versão mais recente e fazer uma cópia local, na qual poderão trabalhar em cima dela e continuar o processo de desenvolvimento.
 
- A cada alteração feita, é possível enviar novamente ao repositório, atualizando a versão a partir de outras feitas pelos demais colaboradores.
+A cada alteração feita, é possível enviar novamente ao repositório, atualizando a versão a partir de outras feitas pelos demais colaboradores.
 
 Dependendo das necessidades específicas de uma equipe e do processo de desenvolvimento, um VCS (sistema de controle de versão) pode ser **local**, **centralizado** ou **distribuído**. O VCS local armazena os arquivos em um sistema local, o VCS centralizado armazena as alterações em um servidor único e o VCS distribuído permite que cada desenvolvedor tenha uma cópia completa do repositório, como no **Git**.
 
@@ -78,12 +87,10 @@ O controle de versão coordena todas as mudanças em um projeto de software, ras
 
 Com um VCS robusto, as equipes de software podem reunir rapidamente todos os arquivos críticos do projeto e promover uma comunicação eficaz para melhorar a qualidade de código. E, como ele oferece uma fonte única de verdade, os stakeholders de toda a equipe DevOps podem colaborar para criar soluções inovadoras: desde os responsáveis pelo planejamento até os profissionais responsáveis pela implementação e manutenção do sistema.
 
-
  <hr>
 <br>
  
 # O que é Git
-
 
  <hr>
 <br>
@@ -176,7 +183,6 @@ git restore arquivo.txt
 
  <hr>
 <br>
- 
 
 ## Desafio: Desfazer um commit sem apagar o histórico
 
