@@ -15,7 +15,7 @@ Entre no site oficial do GitHub:
 </p>
 
 
-## 2. Clique em **Create un account** para iniciar o cadastro.
+## 2. Clique em **Create an account** para iniciar o cadastro.
 
 <p align="center">
   <img src="assets/github-criar-conta.png" alt="Logo Git" width="100%">
@@ -23,7 +23,14 @@ Entre no site oficial do GitHub:
 
 ---
 
-## 3. Informe sua conta da Google ou a conta da Apple. Os seus dados fornecidos nelas serão reutilizados pelo GitHub e a conta será criada automaticamente.
+## 3. Escolha uma das opções de cadastro
+
+Você pode criar sua conta utilizando:
+
+- Uma conta Google;
+- Uma conta Apple.
+
+Os dados da conta escolhida serão reutilizados pelo GitHub e sua conta será criada automaticamente.
 
 <p align="center">
   <img src="assets/github-cadastro-conta-gmail-apple.png" alt="Logo Git" width="100%">
@@ -39,7 +46,7 @@ Caso você não utilize uma conta da Google ou da Apple, digite outro **endereç
 > **Observação:** utilize um e-mail que você tenha acesso, pois será necessário confirmar o cadastro.
 
 
-## Crie uma senha
+## 4. Crie uma senha
 
 Escolha uma senha forte, contendo:
 
@@ -49,7 +56,7 @@ Escolha uma senha forte, contendo:
 
 ---
 
-## 4. Escolha um nome de usuário (username)
+## 5. Escolha um nome de usuário (username)
 
 <p align="center">
   <img src="assets/github-username.png" width="100%">
@@ -84,29 +91,69 @@ https://github.com/seu-usuario
 
 ---
 
-## 5. Verifique sua conta
+## 6. Verifique sua conta
 
 O GitHub enviará um código de verificação para o e-mail informado.
 
-1. Acesse sua caixa de entrada;
-2. Copie o código recebido;
-3. Digite o código na página de verificação do GitHub.
+I. Acesse sua caixa de entrada;
+
+<p align="center">
+  <img src="assets/github-verificacao.png" width="100%">
+</p>
+
+II. Copie o código recebido;
+
+<p align="center">
+  <img src="assets/github-código.png" alt="código de verificação¨ width="100%">
+</p>
+  
+III. Após digitar o código na página de verificação do GitHub, abrir a página de login e preencher com o seu username escolhido e a senha, ficará assim:
+
+<p align="center">
+  <img src="assets/github-fazendo-login.png" width="100%">
+</p>
 
 ---
 
-## 6. Finalize o cadastro
+## 7. Finalize o cadastro
 
 Após confirmar o e-mail, sua conta estará criada e pronta para uso.
 
 ---
 
-# Configurando seu perfil
+# Configurando seu perfil:
 
 Após acessar sua conta:
 
 1. Clique na foto de perfil no canto superior direito;
-2. Selecione **Your profile**;
-3. Clique em **Edit profile**.
+
+<p align="center">
+  <img src="assets/clicando-na-foto.png" width="100%">
+</p>
+  
+3. Selecione **Your profile**:
+
+<p align="center">
+  <img src="assets/dashboard-profile.png" width="100%">
+</p>
+
+4. Aparecerá assim:
+
+<p align="center">
+  <img src="assets/login-profile.png" width="100%">
+</p>
+
+5. Clique na foto de perfil no canto superior direito e selecione a opção **Settings**:
+
+<p align="center">
+  <img src="assets/github-configuracao.png" width="100%">
+</p>
+
+6. Aparecerá assim:
+
+<p align="center">
+  <img src="assets/github-profile-config.png" width="100%">
+</p>
 
 Você pode adicionar:
 
