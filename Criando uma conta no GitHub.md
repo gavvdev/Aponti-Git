@@ -49,10 +49,10 @@ Escolha uma senha forte, contendo:
 
 ---
 
-## 4. Escolha username de usuário
+## 4. Escolha um nome de usuário (username)
 
 <p align="center">
-  <img src="assets/github-dados-pessoais.png" alt="Logo Git" width="100%">
+  <img src="assets/github-username.png" width="100%">
 </p>
 
 > Na seta verde defina um username exclusivo para sua conta. Lembre que esse username é como você é identificado na plataforma do GitHub, então escolha com sabedoria pensando no ambiente profissional que você estará inserido.
