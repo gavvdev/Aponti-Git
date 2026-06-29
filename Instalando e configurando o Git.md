@@ -1,7 +1,7 @@
 # Instalando o Git
 
 <p align="center">
-  <img src="assets/config-git.png" alt="Git" width="180">
+  <img src="assets/config-git.png" alt="Git" width="100%">
 </p>
 
 Caso o Git ainda não esteja instalado em seu computador:
@@ -51,7 +51,7 @@ git config --global user.email
 ## Fazendo login no GitHub pelo VS Code
 
 <p align="center">
-  <img src="assets/vscode.jpg" alt="Vscode" width="180">
+  <img src="assets/vscode.jpg" alt="Vscode" width="200%">
 </p>
 
 1. Abra o Visual Studio Code;
