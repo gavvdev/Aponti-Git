@@ -1,7 +1,7 @@
 # O que é Git?
 
 <p align="center">
-  <img src="assets/git-logo.png" width="250" alt="Logo Git">
+  <img src="assets/git-logo.jpg" width="250" alt="Logo Git">
 </p>
 
 O **Git** é um sistema de controle de versão distribuído, criado por **Linus Torvalds** em 2005. Ele permite registrar, acompanhar e gerenciar as alterações realizadas em arquivos e projetos ao longo do tempo.
